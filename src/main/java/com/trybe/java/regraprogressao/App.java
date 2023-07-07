@@ -48,22 +48,22 @@ public class App {
     for (int peso : listaPesos) {
       somaPesos += peso;
     }
-    //
-    // for (int pesoNota : listaPesosNotas) {
-    // somaNotas += pesoNota;
-    // }
-    //
-    // double mediaNotas = (double) somaNotas / somaPesos;
-    //
-    // if (mediaNotas >= 85) {
-    // System.out.println("Parabéns! Você alcançou " + mediaNotas
-    // + "%! E temos o prazer de informar que você obteve aprovação!");
-    // } else {
-    // System.out
-    // .println("Lamentamos informar que, com base na sua pontuação alcançada neste período, "
-    // + mediaNotas
-    // + "%, você não atingiu a pontuação mínima necessária para sua aprovação.");
-    // }
+
+    for (int pesoNota : listaPesosNotas) {
+      somaNotas += pesoNota;
+    }
+
+    double mediaNotas = (double) somaNotas / somaPesos;
+
+    if (mediaNotas >= 85) {
+      System.out.println("Parabéns! Você alcançou " + mediaNotas
+          + "%! E temos o prazer de informar que você obteve aprovação!");
+    } else {
+      System.out
+          .println("Lamentamos informar que, com base na sua pontuação alcançada neste período, "
+              + mediaNotas
+              + "%, você não atingiu a pontuação mínima necessária para sua aprovação.");
+    }
   }
 }
 
